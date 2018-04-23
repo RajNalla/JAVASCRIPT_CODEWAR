@@ -1,0 +1,40 @@
+<html>
+<head> <style>
+	         body{
+	               background-color:#3695;
+	             }
+	  </style>
+      <script> 
+	  
+	 
+              	function getValue(){
+				                 var a=document.getElementById("firstname").value;
+								 var b=document.getElementById("lastname").value;
+								 var c=document.getElementsByName("name").length; 
+                                 var d= document.getElementById("adress").value;								 
+				alert(a +'     ' +b + '     ' + c+'     '+d);
+				
+				}
+	        </script>  
+    </head>
+	       <body>
+		   <center><h3>customer form</h3>
+		          <table cellspacing=20 border=1>
+		            <tr><td>FirstName</td><td><input type="text" id="firstname"/></td></tr>
+				     <tr><td>LastName</td><td><input type="text" id="lastname"/></td></tr>
+				     <tr><td>Male:</td><td><input type="radio" id="gender1" value="male"/> </td></tr> 
+                    <tr><td>Female:</td><td ><input type="radio" id="gender2" value="female"/>  </td></tr>
+				     <tr><td>Address line 1</td><td> <input type="text" id="adress" value="" /></td></tr>
+	                 <tr><td>zip</td> <td><input type="number" value="zip"/></td></tr>
+		             <tr><td>Country:</td>
+                     <td><select> <option disabled selected>choose country </option>
+                     <option>INDIA</option>
+                     <option>USA</option>
+                     <option>UK</option>
+                     <option>GERMANY</option>
+	                 </select></td></tr>
+	                 <tr><td><input type="submit" onclick="getValue()"/></td></tr>
+				   </table>
+			    </center>
+	     </body>
+	</html>

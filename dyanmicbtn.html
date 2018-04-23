@@ -1,0 +1,18 @@
+<html>
+      <head>
+           <script>
+		          function pingMe(x){
+				  var btn=document.createElement("button");
+				  var t=document.createTextNode("poke me");
+				  btn.appendChild(t);
+				  document.body.appendChild(btn);
+				  btn=document.getElementById('fn').value;
+				  alert(btn);
+				 btn=document.getElementById('dn').disabled=true;
+				  }
+           </script>
+      </head>
+	         <body>
+			 first name:<input type="text" id="fn"/>
+			 <input type="button" value="click me" id="dn" onClick="pingMe('x')"/>
+			 </body>
